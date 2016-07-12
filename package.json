@@ -1,0 +1,25 @@
+{
+  "name": "chatherbox",
+  "version": "1.0.0",
+  "description": "social media application for women entrepreneurs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estroid/chatHERbox.git"
+  },
+  "author": "Esther Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estroid/chatHERbox/issues"
+  },
+  "homepage": "https://github.com/estroid/chatHERbox#readme",
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}

@@ -1,3 +1,4 @@
+<!-- Authentication page -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,9 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body ng-app="chatHERbox">
     <ul class="nav">
-      <li class="active"><a href="/ideas">Ideas</a></li>
+      <li class="active"><a href="/ideas">ChatHERbox</a></li>
     </ul>
     <p class="navbar-text pull-right">
     <% if user_signed_in? %>
@@ -29,5 +30,8 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
     <%= yield %>
+
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="public/index.js"></script>
   </body>
 </html>

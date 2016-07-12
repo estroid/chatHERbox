@@ -26,6 +26,10 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  # Allows us to serve assets from the public directory
+  # config.public_file_server.enabled
+  config.serve_static_assets = true
+
   # Action mailer default URL options for devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 

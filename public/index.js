@@ -1,0 +1,1 @@
+var chatHERbox = angular.module('chatHERbox', []).run(function(){console.log("angular whoa!")});
