@@ -1,4 +1,13 @@
 
-.active {
+li a {
 text-decoration: none;
+}
+
+body {
+  text-align: center;
+}
+
+h2 {
+  font-size: 5em;
+  text-align: center;
 }
