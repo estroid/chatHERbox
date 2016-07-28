@@ -1,2 +1,13 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!-- Welcome page user sees after signing-in -->
+<!-- Add a helper method here...look up Hartl erb links so it directs to show.html.erb here
+ -->
+
+<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'logout-link'  %>
+
+
+
+<h1>Hello!</h1>
+
+<p> Welcome to ChatHERbox, a social media site for entrepreneurial women.</p>
+
+<!-- Hard code links to blog text and images in html

@@ -1,0 +1,18 @@
+{
+  "name": "chatherbox",
+  "description": "social media application for women entrepreneurs",
+  "main": "index.js",
+  "authors": [
+    "Esther Lee"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/estroid/chatHERbox",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

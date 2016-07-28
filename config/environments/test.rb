@@ -37,6 +37,10 @@ Rails.application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
+  # Allows us to serve assets from the public directory
+  # config.public_file_server.enabled
+  config.serve_static_assets = true
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
