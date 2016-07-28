@@ -1,4 +1,4 @@
-<!-- Authentication page -->
+<!-- index page -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,27 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
   </head>
 
-  <body ng-app="chatHERbox">
-    <ul class="nav">
-      <li class="active"><a href="/ideas">ChatHERbox</a></li>
-    </ul>
-    <p class="navbar-text pull-right">
-    <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-    <% end %>
+  <body>
 
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-    <%= yield %>
+      <!-- The alert message that users see after logging in, so move this content into its own view -->
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+      <!--  -->
 
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="public/index.js"></script>

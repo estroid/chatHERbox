@@ -1,15 +1,33 @@
-
+/*body {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+*/
 li a {
-text-decoration: none;
+  text-decoration: none;
 }
 
-body {
-  text-align: center;
-}
 
 h2 {
-  font-size: 5em;
+  font-size: 6em;
   text-align: center;
   font-family: 'Fugaz One', cursive;
+}
+
+.landing-parent {
+  height: 100%;
+  width: 100%;
+}
+
+.landing-content {
+  background-image: url("BirdsEyeofWomenWorking.jpg");
+/*  height: 100%;
+  width: 100%;*/
+  text-align: center;
+  background-size: 100% auto;
+  padding-bottom: 50%;
+  /*background-size: 50% 100%;
+  background-repeat: no-repeat;*/
 }
 
