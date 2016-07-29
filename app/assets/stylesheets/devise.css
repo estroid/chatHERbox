@@ -9,8 +9,8 @@ li a {
 }
 
 
-h2 {
-  font-size: 6em;
+h3 {
+  font-size: 3em;
   text-align: center;
   font-family: 'Fugaz One', cursive;
   margin: auto;
@@ -21,10 +21,40 @@ h2 {
   width: 100%;
 }
 
+/* background image with opacity*/
 .landing-content {
   background-image: url("BirdsEyeofWomenWorking.jpg");
+  background-size: 100% auto;
+  padding-bottom: 50%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* input form */
+.class {
   text-align: center;
   background-size: 100% auto;
   padding-bottom: 50%;
 }
 
+.app_description {
+  font-size: 2em;
+  font-family: 'Fugaz One', cursive;
+  margin: auto;
+  padding: 0 200px 0 200px;
+}
+
+.tagline {
+  font-size: 2em;
+  font-family: 'Fugaz One', cursive;
+}
+
+img {
+width: 100px;
+height: 100px;
+}
