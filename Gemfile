@@ -13,8 +13,6 @@ group :production do
   gem 'rails_12factor'
 end
 
-# Sticky is a jQuery plugin that gives you the ability to make any element on your page always stay visible.
-gem 'sticky-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

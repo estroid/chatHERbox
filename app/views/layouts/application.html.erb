@@ -12,19 +12,31 @@
   </head>
 
   <body>
+<!-- This section includes a header for the site’s (plain-text) logo, a couple of divisions (using the div tag), and a list of elements with navigation links: -->
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "ChatHERbox Logo", '#', id: "logo" %> <!-- This uses the Rails helper link_to to create links, see Hartl 3.2.2-->
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "ABOUT",   '#' %></li> <!-- add real URLs for links -->
+            <li><%= link_to "SIGN UP",   '#' %></li>
+            <li><%= link_to "CONTACT", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <div="landing-parent"> <!--background image in css -->
-      <div class="landing-content">
+<!-- For the main content -->
+    <div class="container">
+      <div="landing-parent"> <!--background image in css -->
+        <div class="landing-content"></div>
+      </div>
+      <!-- yield method inserts the contents of each page into the site layout -->
+      <%= yield %>
     </div>
 
-      <!-- The alert message that users see after logging in, so move this content into its own view -->
-      <% if notice %>
-        <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-        <p class="alert alert-danger"><%= alert %></p>
-      <% end %>
-      <%= yield %>
-      <!--  -->
   </body>
 </html>
+
+<!-- Add site footer, see Hartl 5.1.3 -->
+
