@@ -71,7 +71,7 @@ ul.right-nav {
 }
 
 /* ChatHERbox description on index.html.erb*/
-.app_description1, .app_description2 {
+.app_description {
   font-size: 1.5em;
   font-family: 'Oxygen', sans-serif;
   margin: auto;
