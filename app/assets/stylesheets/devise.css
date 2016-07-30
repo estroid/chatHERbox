@@ -1,3 +1,13 @@
+/* logo */
+.logo {
+  background-image: url("Logo2.png");
+  width: 100px;
+  height: 100px;
+  background-size: 100% auto;
+  margin-left: 200%;
+  margin-top: 1%;
+}
+
 /* Navigation links */
 .navigation {
   display: inline-block;
@@ -7,8 +17,17 @@ nav li a {
   padding: 25px 10px;
  /* display: block;*/
   text-decoration: none;
-  color: #000000;
+  color: #fff;
+  font-weight: 500;
   font-family: 'Oxygen', sans-serif;
+  text-shadow: 1px 1px #696969;
+}
+
+/* Arranges list items next to each other vs. stacked */
+nav li {
+  float: left;
+  width: auto;
+  list-style-type: none; /* Rids of list bullets */
 }
 
 /* Left-floated nav, logo */
@@ -35,20 +54,15 @@ ul.right-nav {
   text-shadow: 2px 2px #696969;
 }
 
-/* Arranges list items next to each other vs. stacked */
-nav li {
-  float: left;
-  width: auto;
-  list-style-type: none; /* Rids of list bullets */
-}
-
-h3 {
-  font-size: 3em;
-  text-align: center;
-  font-family: 'Fugaz One', cursive;
+/* ChatHERbox description on index.html.erb*/
+.app_description1, .app_description2 {
+  font-size: 1.5em;
+  font-family: 'Oxygen', sans-serif;
   margin: auto;
+  padding: 0 200px 0 200px;
 }
 
+/* background image in css */
 .landing-parent {
   height: 100%;
   width: 100%;
@@ -64,7 +78,7 @@ h3 {
   right: 0;
   position: absolute;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.6;
   /*-webkit-filter: grayscale(100%);*/
 /*  box-shadow: 100% rgba(255, 0, 92, 0.6) inset;*/
 }
@@ -76,29 +90,16 @@ h3 {
   padding-bottom: 50%;
 }
 
-/* ChatHERbox description */
-.app_description1, .app_description2 {
-  font-size: 1.5em;
-  font-family: 'Oxygen', sans-serif;
-  margin: auto;
-  padding: 0 200px 0 200px;
-}
-
-
 /* Input form */
 .input-form {
   font-size: 1em;
   font-family: 'Oxygen', sans-serif;
   text-align: center;
+  color: #fff;
+  margin: 2em;
 }
 
-/* logo */
-.logo {
-  background-image: url("Logo2.png");
-  width: 100px;
-  height: 100px;
-  background-size: 100% auto;
-  margin-left: 200%;
-  margin-top: 1%;
+/* Input fields */
+.field {
+  margin: 1.5em 1em 1em 1em;
 }
-
