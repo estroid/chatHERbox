@@ -7,7 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 # Serve image assets over deployment
-config.serve_static_assets = true
+# config.serve_static_assets = true
 
 module ChatHerbox
   class Application < Rails::Application
