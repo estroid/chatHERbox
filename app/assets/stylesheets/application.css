@@ -33,6 +33,7 @@ nav li a {
  /* display: block;*/
   text-decoration: none;
   color: #fff;
+  font-size: 1.25em;
   font-weight: 500;
   font-family: 'Oxygen', sans-serif;
   text-shadow: 1px 1px #696969;
@@ -93,7 +94,7 @@ ul.right-nav {
   right: 0;
   position: absolute;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.4;
   /*-webkit-filter: grayscale(100%);*/
 /*  box-shadow: 100% rgba(255, 0, 92, 0.6) inset;*/
 }
@@ -118,3 +119,10 @@ ul.right-nav {
 .field {
   margin: 1.5em 1em 1em 1em;
 }
+
+/* Sign up link */
+.signup, .forgot_password_link {
+  color: #fff;
+  text-decoration: none;
+}
+
