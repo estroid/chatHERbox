@@ -15,12 +15,12 @@
   <body>
     <%= render 'layouts/header' %> <!-- calls a helper for HTML header -->
 <!-- For the main content -->
-    <div class="container">
+    <div class="my_container">
       <!--background image in css -->
       <div class="landing-content"></div>
       <!-- yield method inserts the contents of each page into the site layout -->
       <%= yield %>
-      <%= render 'layouts/footer' %> <!-- calls a helper for footer -->
     </div>
+    <%= render 'layouts/footer' %> <!-- calls a helper for footer -->
   </body>
 </html>
