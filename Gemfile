@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'social-share-button'
+# helps you quick create a share feature in you Rails apps.
 gem 'bootstrap-sass', '3.3.6'
 # Boostrap-sass gem
 gem 'devise'

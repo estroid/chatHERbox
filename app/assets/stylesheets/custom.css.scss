@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// color palette from http://www.colourlovers.com/palette/1485451/Womens_Day and http://www.colourlovers.com/fashion/trends/street-fashion/7896/Floral_Much
+
 /* -------------- universal --------------*/
 body {
   padding-top: 60px;
@@ -22,11 +24,29 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* -------------- Background image -------------- */
+
+/* background image with opacity*/
+.landing-content {
+  background-image: url("BirdsEyeofWomenWorking.jpg");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.6;
+  /*-webkit-filter: grayscale(100%);*/
+/*  box-shadow: 100% rgba(255, 0, 92, 0.6) inset;*/
+}
+
 /* -------------- Navigation bar color -------------- */
 .navbar {
-    color: #FFF;
-    background-color: #fff;
+  color: #FFF;
+  background-color: #fff;
 }
+
 
 /* -------------- Jumbotron -------------- */
 .center.jumbotron {
@@ -34,17 +54,22 @@ textarea {
 }
 
 .jumbotron h1{
-    color: #ED146F;
+  color: #61D2D6;
 }
-
-// .btn {
-//   color: #ED146F;
-// }
 
 .btn {
-  border: 2px solid #0099cc;
-  color: #0099cc;
+  border: 2px solid #61D2D6;
+  color: #61D2D6;
 }
+
+/* -------------- Logo -------------- */
+
+.logo {
+  font-family: 'Courgette', cursive;
+  font-size: 2.75em;
+  color: #FF4D70;
+}
+
 
 /* -------------- typography -------------- */
 h1, h2, h3, h4, h5, h6 {
@@ -79,8 +104,26 @@ li {
   font-family: 'Oxygen', sans-serif;
   font-size: 1.25em;
   font-weight: 500;
+  color: #fff;
+}
+
+/* -------------- Input form -------------- */
+.input-form {
+  text-align: center;
+}
+
+/* -------------- Forgot your passwork link, email, etc. -------------- */
+.forgot_password_link{
+  color: #000;
+  font-size: 1em;
   // text-shadow: 1px 1px #696969;
 }
+
+// .field {
+//   color: #fff;
+//   font-size: 1em;
+//   font-weight: 30;
+// }
 
 /* -------------- footer -------------- */
 
@@ -88,15 +131,15 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: #FF4D70;
 }
 
 footer a {
-  color: #555;
+  color: #fff;
 }
 
 footer a:hover {
-  color: #222;
+  color: #FF4D70;
 }
 
 footer small {
@@ -106,25 +149,14 @@ footer small {
 footer ul {
   float: right;
   list-style: none;
+
 }
 
 footer ul li {
   float: left;
   margin-left: 15px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // /* logo */
@@ -197,21 +229,6 @@ footer ul li {
 //   height: 100%;
 //   width: 100%;
 // }
-
-/* background image with opacity*/
-.landing-content {
-  background-image: url("BirdsEyeofWomenWorking.jpg");
-  background-size: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.6;
-  /*-webkit-filter: grayscale(100%);*/
-/*  box-shadow: 100% rgba(255, 0, 92, 0.6) inset;*/
-}
 
 // /* input form */
 // .class {
