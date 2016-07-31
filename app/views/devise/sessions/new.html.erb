@@ -1,30 +1,17 @@
-<!-- log in page -->
+<!-- The Home page with a link to the signup page -->
 
-<div="landing-parent"> <!--background image in css -->
-  <div class="landing-content"></div>
+
+<div class="center jumbotron">
+  <h1>Welcome to ChatHERbox!</h1>
+
+  <h2>Chat and collaborate with ambitious women around the world.</h2>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
 </div>
 
-<!-- Top Navigation -->
-<!-- <header>
-  <nav class="navigation">
-    <div class="container">
-      <ul class="left-nav">
-        <li><a href="#"><div class="logo" alt="Chatherbox logo"></div></a></li>
-      </ul>
+<!-- Chatherbox logo file -->
+<%#= link_to image_tag("Logo2.png", alt: "Chatherbox logo"),
+            'http://rubyonrails.org/' %>
 
-      <ul class="right-nav">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#work">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
-</header> -->
-
-
-<!-- Tagline -->
-    <p class="tagline1"> Chat, network, and collaborate</p>
-    <p class="tagline2">with ambitious women around the world.</p>
 <!-- Form for logging in or signing up -->
     <div class="input-form">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>

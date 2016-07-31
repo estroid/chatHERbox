@@ -1,0 +1,15 @@
+<!-- A partial for the HTML header -->
+
+<!-- This section includes a header for the site’s (plain-text) logo, a couple of divisions (using the div tag), and a list of elements with navigation links: -->
+    <header class="navbar navbar-fixed-top">
+      <div class="container">
+        <%= link_to "ChatHERbox Logo", '#', id: "logo" %> <!-- This uses the Rails helper link_to to create links, see Hartl 3.2.2-->
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "ABOUT",   '#' %></li> <!-- add real URLs for links -->
+            <li><%= link_to "CONNECT",   '#' %></li>
+            <li><%= link_to "CONTACT", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
