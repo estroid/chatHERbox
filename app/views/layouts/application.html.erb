@@ -7,8 +7,9 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %> <!-- calls a helper for HTML shim stylesheet -->
-    <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Baumans|Bevan|Fugaz+One|Leckerli+One|Lily+Script+One|Lobster|Poiret+One|Righteous|Shrikhand|Sirin+Stencil" rel="stylesheet">
+
   </head>
 
   <body>
@@ -17,11 +18,9 @@
     <div class="container">
       <!--background image in css -->
       <div class="landing-content"></div>
-      </div>
       <!-- yield method inserts the contents of each page into the site layout -->
       <%= yield %>
       <%= render 'layouts/footer' %> <!-- calls a helper for footer -->
     </div>
   </body>
 </html>
-

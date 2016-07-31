@@ -28,6 +28,24 @@ textarea {
     background-color: #fff;
 }
 
+/* -------------- Jumbotron -------------- */
+.center.jumbotron {
+  opacity: 0.9;
+}
+
+.jumbotron h1{
+    color: #ED146F;
+}
+
+// .btn {
+//   color: #ED146F;
+// }
+
+.btn {
+  border: 2px solid #0099cc;
+  color: #0099cc;
+}
+
 /* -------------- typography -------------- */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -42,7 +60,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
