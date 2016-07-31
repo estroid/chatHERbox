@@ -43,7 +43,7 @@ textarea {
 
 /* -------------- Navigation bar color -------------- */
 .my_container {
-  margin: 50px auto;
+  margin: 40px auto;
   width: 75%;
 
 }
@@ -114,6 +114,11 @@ li {
   color: #fff;
 }
 
+/* blog heading */
+.blog-heading {
+  margin-top: 65px;
+}
+
 /* -------------- Input form -------------- */
 .input-form {
   text-align: center;
@@ -135,10 +140,15 @@ li {
 /* -------------- footer -------------- */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  // margin: 45px 50px 0px 15px;
+  // padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #FF4D70;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
 }
 
 footer a {
@@ -156,15 +166,18 @@ footer small {
 footer ul {
   float: right;
   list-style: none;
+  margin-right: 50px;
 
 }
 
 footer ul li {
   float: left;
-  margin-left: 15px;
-
+  margin: 12px;
 }
 
+.copyright {
+  margin-left: 30px;
+}
 
 // /* logo */
 // .logo {
